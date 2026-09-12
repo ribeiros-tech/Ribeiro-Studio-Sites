@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Café — Seu momento começa aqui</title>
+  <meta name="description" content="Aurora Café — cafeteria artesanal em Adrianópolis, Manaus. Café especial, ambiente acolhedor e momentos que importam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <svg class="navbar__logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <span class="navbar__logo-text">Aurora <em>Café</em></span>
+      </a>
+      <nav class="navbar__nav" id="navMenu" aria-label="Menu principal">
+        <a href="#produtos" class="navbar__link">Produtos</a>
+        <a href="#historia" class="navbar__link">Nossa História</a>
+        <a href="#diferenciais" class="navbar__link">Diferenciais</a>
+        <a href="#galeria" class="navbar__link">Galeria</a>
+        <a href="#depoimentos" class="navbar__link">Depoimentos</a>
+        <a href="#localizacao" class="navbar__link">Localização</a>
+      </nav>
+      <a href="#localizacao" class="navbar__cta">Reservar Mesa</a>
+      <button class="navbar__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#produtos" class="mobile-menu__link">Produtos</a>
+      <a href="#historia" class="mobile-menu__link">Nossa História</a>
+      <a href="#diferenciais" class="mobile-menu__link">Diferenciais</a>
+      <a href="#galeria" class="mobile-menu__link">Galeria</a>
+      <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
+      <a href="#localizacao" class="mobile-menu__link">Localização</a>
+      <a href="#localizacao" class="mobile-menu__cta">Reservar Mesa</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80" alt="Xícara de café artesanal com latte art em mesa de madeira" class="hero__img" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__tag anim-fade">Cafeteria Artesanal</span>
+      <h1 class="hero__title anim-fade">Seu momento<br>começa aqui.</h1>
+      <p class="hero__desc anim-fade">Café especial preparado com cuidado, em um ambiente feito para você respirar, sentir e aproveitar.</p>
+      <div class="hero__actions anim-fade">
+        <a href="#produtos" class="btn btn--primary">Conheça nosso cardápio</a>
+        <a href="#historia" class="btn btn--outline">Nossa história</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Role para explorar</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header anim-fade">
+        <span class="section-tag">Cardápio</span>
+        <h2 class="section-title">Feitos com <em>intenção</em></h2>
+        <p class="section-desc">Cada item é preparado pensando no seu momento. Dos grãos selecionados à última gole.</p>
+      </div>
+      <div class="produtos__grid">
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Espresso duplo em xícara cerâmica" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Espresso Duplo</h3>
+            <p class="produto-card__desc">Intenso, encorpado e com notas de chocolate amargo. Nossa assinatura.</p>
+            <span class="produto-card__price">R$ 14,00</span>
+          </div>
+        </article>
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Cappuccino cremoso com espuma fina" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Cappuccino Clássico</h3>
+            <p class="produto-card__desc">Equilíbrio perfeito entre espresso, leite vaporizado e espuma aveludada.</p>
+            <span class="produto-card__price">R$ 18,00</span>
+          </div>
+        </article>
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold brew em copo alto com gelo" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Cold Brew</h3>
+            <p class="produto-card__desc">Extraído a frio por 12 horas. Suave, doce natural e refrescante.</p>
+            <span class="produto-card__price">R$ 20,00</span>
+          </div>
+        </article>
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Croissant dourado folhado na bancada" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Croissant France&rsquo;s</h3>
+            <p class="produto-card__desc">Folhado, amanteigado e dourado. Feito artesanalmente toda manhã.</p>
+            <span class="produto-card__price">R$ 16,00</span>
+          </div>
+        </article>
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" alt="Fatia de bolo de cenoura com cobertura" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Bolo de Cenoura</h3>
+            <p class="produto-card__desc">Fofinho, úmido e com cobertura de chocolate ganache. Clássico de verdade.</p>
+            <span class="produto-card__price">R$ 15,00</span>
+          </div>
+        </article>
+
+        <article class="produto-card anim-fade">
+          <div class="produto-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80" alt="Pão de queijo quentinho em cesto" class="produto-card__img" loading="lazy">
+          </div>
+          <div class="produto-card__body">
+            <h3 class="produto-card__name">Pão de Queijo</h3>
+            <p class="produto-card__desc">Croccante por fora, puxa por dentro. Receita da casa com queijo minas.</p>
+            <span class="produto-card__price">R$ 12,00</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section class="historia" id="historia">
+    <div class="container">
+      <div class="historia__grid">
+        <div class="historia__media anim-fade">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80" alt="Grãos de café sendo torrados artesanalmente" class="historia__img" loading="lazy">
+          <div class="historia__accent"></div>
+        </div>
+        <div class="historia__text anim-fade">
+          <span class="section-tag">Nossa História</span>
+          <h2 class="section-title">A pausa que<br>você merece.</h2>
+          <p class="historia__paragraph">A Aurora Café nasceu do desejo de criar um espaço onde o tempo pudesse desacelerar. Aqui, cada xícara é uma invitacao ao silêncio, ao aroma que envolve e ao sabor que reconecta.</p>
+          <p class="historia__paragraph">Fundada em 2021 no coração de Adrianópolis, em Manaus, a Aurora se tornou referência em café especial na região amazônica. Trabalhamos direto com produtores de pequena escala, selecionando grãos com origem rastreável e torrefação artesanal.</p>
+          <p class="historia__paragraph">Não somos apenas uma cafeteria. Somos o lugar onde seu momento começa.</p>
+          <div class="historia__stats">
+            <div class="historia__stat">
+              <span class="historia__stat-number">5+</span>
+              <span class="historia__stat-label">Anos de história</span>
+            </div>
+            <div class="historia__stat">
+              <span class="historia__stat-number">12</span>
+              <span class="historia__stat-label">Variedades de café</span>
+            </div>
+            <div class="historia__stat">
+              <span class="historia__stat-number">3k+</span>
+              <span class="historia__stat-label">Clientes felizes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-header anim-fade">
+        <span class="section-tag">Por que a Aurora?</span>
+        <h2 class="section-title">Feito com <em>propósito</em></h2>
+      </div>
+      <div class="diferenciais__grid">
+        <div class="diferencial-card anim-fade">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3c0 1.6.8 2.4 1.5 3.5C11.2 9.6 12 11 12 14"/><circle cx="12" cy="17" r="3"/><path d="M12 2v0"/></svg>
+          </div>
+          <h3 class="diferencial-card__title">Café Selecionado</h3>
+          <p class="diferencial-card__desc">Grãos de origem rastreável, torrados artesanalmente em lotes pequenos para garantir frescor e qualidade.</p>
+        </div>
+        <div class="diferencial-card anim-fade">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.5-3 9-8.5 9-13a5 5 0 0 0-9-3 5 5 0 0 0-9 3c0 4.5 3.5 10 9 13z"/></svg>
+          </div>
+          <h3 class="diferencial-card__title">Produção Artesanal</h3>
+          <p class="diferencial-card__desc">Do torramento à preparação, cada etapa é feita à mão com atenção aos detalhes.</p>
+        </div>
+        <div class="diferencial-card anim-fade">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="diferencial-card__title">Ambiente Acolhedor</h3>
+          <p class="diferencial-card__desc">Um espaço projetado para você se sentir em casa. Luz natural, madeira e plantas.</p>
+        </div>
+        <div class="diferencial-card anim-fade">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="diferencial-card__title">Atendimento Próximo</h3>
+          <p class="diferencial-card__desc">Conhecemos nossos clientes pelo nome. Cada visitante é parte da nossa história.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header anim-fade">
+        <span class="section-tag">Galeria</span>
+        <h2 class="section-title">Um olhar <em>dentro</em></h2>
+        <p class="section-desc">Conheça o espaço que preparamos para você.</p>
+      </div>
+      <div class="galeria__grid">
+        <div class="galeria__item anim-fade">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80" alt="Interior da cafeteria com mesas de madeira e iluminação natural" loading="lazy">
+          <div class="galeria__caption">Nosso espaço principal</div>
+        </div>
+        <div class="galeria__item anim-fade">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&q=80" alt="Barista preparando café com equipamento profissional" loading="lazy">
+          <div class="galeria__caption">Preparo artesanal</div>
+        </div>
+        <div class="galeria__item anim-fade">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80" alt="Balcão da cafeteria com produtos expostos" loading="lazy">
+          <div class="galeria__caption">Nossa bancada</div>
+        </div>
+        <div class="galeria__item anim-fade">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Detalhe de latte art em xícara" loading="lazy">
+          <div class="galeria__caption">Latte art</div>
+        </div>
+        <div class="galeria__item anim-fade">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Café servido com acompanhamentos" loading="lazy">
+          <div class="galeria__caption">O momento é agora</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-header anim-fade">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que dizem <em>sobre</em> nós</h2>
+        <p class="section-desc">* Depoimentos demonstrativos para fins de portfólio.</p>
+      </div>
+      <div class="depoimentos__grid">
+        <blockquote class="depoimento-card anim-fade">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p class="depoimento-card__text">"O melhor café de Manaus, de longe. O Cold Brew deles é viciante e o ambiente é perfeito para trabalhar ou simplesmente relaxar."</p>
+          <footer class="depoimento-card__author">
+            <div class="depoimento-card__avatar">MC</div>
+            <div>
+              <cite class="depoimento-card__name">Marina Costa</cite>
+              <span class="depoimento-card__role">Designer Gráfica</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="depoimento-card anim-fade">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p class="depoimento-card__text">"Venho toda semana com meu namorado. O croissant deles é o melhor que já comi, e o atendimento é sempre caloroso."</p>
+          <footer class="depoimento-card__author">
+            <div class="depoimento-card__avatar">RL</div>
+            <div>
+              <cite class="depoimento-card__name">Renata Lima</cite>
+              <span class="depoimento-card__role">Professora</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="depoimento-card anim-fade">
+          <div class="depoimento-card__stars">★★★★★</div>
+          <p class="depoimento-card__text">"Descobri a Aurora por acaso e virou minha segunda casa. Café de qualidade, preço justo e um cantinho acolhedor."</p>
+          <footer class="depoimento-card__author">
+            <div class="depoimento-card__avatar">PS</div>
+            <div>
+              <cite class="depoimento-card__name">Pedro Santos</cite>
+              <span class="depoimento-card__role">Empreendedor</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <div class="localizacao__grid">
+        <div class="localizacao__info anim-fade">
+          <span class="section-tag">Visite-nos</span>
+          <h2 class="section-title">Estamos <em>esperando</em></h2>
+          <div class="localizacao__details">
+            <div class="localizacao__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Endereço</strong>
+                <p>Rua Recife, 256 — Adrianópolis<br>Manaus-AM, 69050-020</p>
+              </div>
+            </div>
+            <div class="localizacao__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>Horário</strong>
+                <p>Seg a Sex: 7h — 20h<br>Sáb: 8h — 18h<br>Dom: 8h — 14h</p>
+              </div>
+            </div>
+            <div class="localizacao__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Contato</strong>
+                <p>(92) 99102-3456<br>contato@auroracafe.com.br</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn--primary">Abrir no Google Maps</a>
+        </div>
+        <div class="localizacao__mapa anim-fade">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7!2d-60.025!3d-3.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8sJzA2JzAwLjAiUyA2MMKwMDEnMzAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Aurora Café no Google Maps"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-final" id="cta-final">
+    <div class="cta-final__bg">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1920&q=80" alt="Grãos de café frescos" class="cta-final__img" loading="lazy">
+      <div class="cta-final__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-final__content anim-fade">
+        <h2 class="cta-final__title">Que tal uma pausa?</h2>
+        <p class="cta-final__desc">Venha nos visitar e descubra o sabor que só a Aurora pode oferecer. Seu momento começa aqui.</p>
+        <div class="cta-final__actions">
+          <a href="#localizacao" class="btn btn--primary btn--lg">Chegar até nós</a>
+          <a href="https://wa.me/5592991023456" target="_blank" rel="noopener" class="btn btn--outline btn--lg">Fale pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <svg class="navbar__logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <span class="navbar__logo-text">Aurora <em>Café</em></span>
+          </a>
+          <p class="footer__tagline">Seu momento começa aqui.</p>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navegação</h4>
+          <a href="#produtos">Produtos</a>
+          <a href="#historia">Nossa História</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#galeria">Galeria</a>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__heading">Contato</h4>
+          <a href="#localizacao">Localização</a>
+          <a href="tel:+5592991023456">(92) 99102-3456</a>
+          <a href="mailto:contato@auroracafe.com.br">contato@auroracafe.com.br</a>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__heading">Social</h4>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Aurora Café. Todos os direitos reservados.</p>
+        <p class="footer__concept">Projeto conceitual/fictício — Criado para fins de portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

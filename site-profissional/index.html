@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Studio Forma — Estúdio de arquitetura e design contemporâneo em Manaus, AM. Projetos autorais de alto padrão.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=yes">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231A1A1A' width='100' height='100' rx='20'/><text x='50' y='65' font-size='40' font-family='Inter,sans-serif' font-weight='200' fill='%23FAFAF8' text-anchor='middle'>SF</text></svg>">
+  <title>Studio Forma — Arquitetura & Interiores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__text">STUDIO FORMA</span>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">STUDIO FORMA</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link nav__link--active">Home</a>
+        <a href="#studio" class="nav__link">Studio</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#processo" class="nav__link">Processo</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+      <a href="#contato" class="nav__cta">Fale conosco</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="menu" id="menu">
+    <nav class="menu__nav">
+      <a href="#home" class="menu__link">Home</a>
+      <a href="#studio" class="menu__link">Studio</a>
+      <a href="#projetos" class="menu__link">Projetos</a>
+      <a href="#servicos" class="menu__link">Serviços</a>
+      <a href="#processo" class="menu__link">Processo</a>
+      <a href="#contato" class="menu__link">Contato</a>
+    </nav>
+  </div>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="home">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=85&auto=format&fit=crop" alt="Arquitetura contemporânea" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__line">FORMA</span>
+        <span class="hero__line">QUE</span>
+        <span class="hero__line">PERMANECE.</span>
+      </h1>
+      <p class="hero__sub">Arquitetura, interiores e espaços pensados para atravessar o tempo.</p>
+      <a href="#projetos" class="hero__cta">Explorar projetos</a>
+      <div class="hero__meta">
+        <span>Arquitetura + Interiores</span>
+        <span>Projetos autorais</span>
+        <span>Desde 2018</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STUDIO -->
+  <section class="studio" id="studio">
+    <div class="studio__grid">
+      <div class="studio__left">
+        <span class="label reveal">Studio</span>
+        <h2 class="studio__title reveal">
+          Espaços não são apenas<br>construídos.<br>
+          <em>São sentidos.</em>
+        </h2>
+      </div>
+      <div class="studio__right">
+        <p class="studio__text reveal">
+          O Studio Forma nasceu da crença de que arquitetura é mais do que estrutura — é experiência. Cada projeto é uma resposta singular ao modo como alguém vive, trabalha e se conecta com o espaço.
+        </p>
+        <p class="studio__text reveal">
+          Com base em Manaus, nosso estúdio une rigor técnico, sensibilidade estética e atenção aos detalhes para criar ambientes que transcendem tendências.
+        </p>
+        <div class="studio__stats reveal">
+          <div class="studio__stat">
+            <span class="studio__stat-num" data-count="8">0</span>
+            <span class="studio__stat-plus">+</span>
+            <span class="studio__stat-label">Anos de experiência</span>
+          </div>
+          <div class="studio__stat">
+            <span class="studio__stat-num" data-count="60">0</span>
+            <span class="studio__stat-plus">+</span>
+            <span class="studio__stat-label">Projetos</span>
+          </div>
+          <div class="studio__stat">
+            <span class="studio__stat-num">100%</span>
+            <span class="studio__stat-label">Projetos autorais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROJETOS -->
+  <section class="projetos" id="projetos">
+    <div class="projetos__header">
+      <span class="label reveal">Projetos</span>
+      <h2 class="projetos__title reveal">Portfólio</h2>
+    </div>
+    <div class="projetos__grid">
+      <article class="projeto reveal" data-category="residencial">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format&fit=crop" alt="Casa Horizonte" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Residencial</span>
+          <h3 class="projeto__name">Casa Horizonte</h3>
+          <span class="projeto__detail">Manaus — 2023</span>
+        </div>
+      </article>
+      <article class="projeto reveal" data-category="interiores">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&auto=format&fit=crop" alt="Residência Áurea" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Interiores</span>
+          <h3 class="projeto__name">Residência Áurea</h3>
+          <span class="projeto__detail">Manaus — 2024</span>
+        </div>
+      </article>
+      <article class="projeto reveal" data-category="residencial">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80&auto=format&fit=crop" alt="Casa Serra" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Residencial</span>
+          <h3 class="projeto__name">Casa Serra</h3>
+          <span class="projeto__detail">Manaus — 2022</span>
+        </div>
+      </article>
+      <article class="projeto reveal" data-category="interiores">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80&auto=format&fit=crop" alt="Apartamento Forma" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Interiores</span>
+          <h3 class="projeto__name">Apartamento Forma</h3>
+          <span class="projeto__detail">Manaus — 2024</span>
+        </div>
+      </article>
+      <article class="projeto reveal" data-category="residencial">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format&fit=crop" alt="Casa Brisa" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Residencial</span>
+          <h3 class="projeto__name">Casa Brisa</h3>
+          <span class="projeto__detail">Manaus — 2023</span>
+        </div>
+      </article>
+      <article class="projeto reveal" data-category="comercial">
+        <div class="projeto__img">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80&auto=format&fit=crop" alt="Villa Contorno" loading="lazy">
+        </div>
+        <div class="projeto__info">
+          <span class="projeto__cat">Comercial</span>
+          <h3 class="projeto__name">Villa Contorno</h3>
+          <span class="projeto__detail">Manaus — 2025</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. PROJETO EM DESTAQUE -->
+  <section class="destaque">
+    <div class="destaque__media reveal">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85&auto=format&fit=crop" alt="Casa Horizonte" loading="lazy">
+    </div>
+    <div class="destaque__content">
+      <span class="label reveal">Projeto em destaque</span>
+      <h2 class="destaque__title reveal">Casa Horizonte</h2>
+      <p class="destaque__text reveal">Arquitetura que nasce da paisagem.</p>
+      <a href="#" class="destaque__cta reveal">Ver projeto</a>
+    </div>
+  </section>
+
+  <!-- 5. SERVIÇOS -->
+  <section class="servicos" id="servicos">
+    <div class="servicos__grid">
+      <div class="servicos__left">
+        <span class="label reveal">Serviços</span>
+        <h2 class="servicos__title reveal">O que fazemos</h2>
+      </div>
+      <div class="servicos__right">
+        <ul class="servicos__list">
+          <li class="servicos__item reveal"><span class="servicos__num">01</span><span class="servicos__name">Arquitetura Residencial</span><span class="servicos__line"></span></li>
+          <li class="servicos__item reveal"><span class="servicos__num">02</span><span class="servicos__name">Arquitetura Comercial</span><span class="servicos__line"></span></li>
+          <li class="servicos__item reveal"><span class="servicos__num">03</span><span class="servicos__name">Design de Interiores</span><span class="servicos__line"></span></li>
+          <li class="servicos__item reveal"><span class="servicos__num">04</span><span class="servicos__name">Reformas e Retrofit</span><span class="servicos__line"></span></li>
+          <li class="servicos__item reveal"><span class="servicos__num">05</span><span class="servicos__name">Consultoria Arquitetônica</span><span class="servicos__line"></span></li>
+          <li class="servicos__item reveal"><span class="servicos__num">06</span><span class="servicos__name">Projetos Executivos</span><span class="servicos__line"></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FILOSOFIA -->
+  <section class="filosofia">
+    <div class="filosofia__grid">
+      <div class="filosofia__text">
+        <span class="label reveal">Filosofia</span>
+        <h2 class="filosofia__title reveal">
+          MENOS RUÍDO.<br>MAIS FORMA.
+        </h2>
+        <p class="filosofia__desc reveal">
+          Acreditamos que boa arquitetura nasce do equilíbrio entre proporção, luz natural e materiais honestos. Cada decisão é pensada para criar espaços que funcionam, emocionam e permanecem.
+        </p>
+        <p class="filosofia__desc reveal">
+          Funcionalidade não é o oposto de beleza — é a base dela. Quando um espaço funciona, ele respira. E quando respira, ele se torna parte de quem o habita.
+        </p>
+      </div>
+      <div class="filosofia__img reveal">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop" alt="Detalhe arquitetônico" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PROCESSO -->
+  <section class="processo" id="processo">
+    <div class="processo__header">
+      <span class="label reveal">Processo</span>
+      <h2 class="processo__title reveal">Como trabalhamos</h2>
+    </div>
+    <div class="processo__steps">
+      <div class="processo__step reveal">
+        <span class="processo__num">01</span>
+        <h3 class="processo__name">Imersão</h3>
+        <p class="processo__desc">Escutamos, observamos e entendemos o contexto, o cliente e o lugar.</p>
+      </div>
+      <div class="processo__step reveal">
+        <span class="processo__num">02</span>
+        <h3 class="processo__name">Conceito</h3>
+        <p class="processo__desc">Definimos a narrativa do projeto — a ideia que guia cada decisão.</p>
+      </div>
+      <div class="processo__step reveal">
+        <span class="processo__num">03</span>
+        <h3 class="processo__name">Desenvolvimento</h3>
+        <p class="processo__desc">Aprofundamos volumes, materiais, luz e funcionalidade.</p>
+      </div>
+      <div class="processo__step reveal">
+        <span class="processo__num">04</span>
+        <h3 class="processo__name">Projeto</h3>
+        <p class="processo__desc">Documentação técnica completa para execução precisa.</p>
+      </div>
+      <div class="processo__step reveal">
+        <span class="processo__num">05</span>
+        <h3 class="processo__name">Execução</h3>
+        <p class="processo__desc">Acompanhamento próximo da obra até o resultado final.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. GALERIA / EXPERIÊNCIA -->
+  <section class="galeria">
+    <div class="galeria__grid">
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80&auto=format&fit=crop" alt="Interior minimalista">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80&auto=format&fit=crop" alt="Sala de estar">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format&fit=crop" alt="Fachada moderna">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format&fit=crop" alt="Interior quente">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80&auto=format&fit=crop" alt="Casa minimalista">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80&auto=format&fit=crop" alt="Escada design">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&auto=format&fit=crop" alt="Arquitetura externa">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80&auto=format&fit=crop" alt="Detalhe interior">
+      </div>
+      <div class="galeria__item reveal">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80&auto=format&fit=crop" alt="Espaço contemporâneo">
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CTA FINAL -->
+  <section class="cta" id="contato">
+    <div class="cta__inner">
+      <h2 class="cta__title reveal">
+        Vamos dar forma<br>ao próximo espaço?
+      </h2>
+      <p class="cta__text reveal">Conte-nos sobre seu projeto.</p>
+      <a href="https://wa.me/5592999999999" class="cta__btn reveal" target="_blank" rel="noopener">Iniciar conversa</a>
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">STUDIO FORMA</span>
+        <span class="footer__tagline">Arquitetura + Interiores</span>
+      </div>
+      <div class="footer__links">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__contact">
+        <p>Manaus — AM, Brasil</p>
+        <p>contato@studioforma.com.br</p>
+        <p>(92) 99999-9999</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Studio Forma. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5592999999999" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
