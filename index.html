@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ribeiro Studio — Projetos</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1115;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: #aeb4c0;
+      font-size: 1.05rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #181b22;
+      border: 1px solid #292e38;
+      border-radius: 18px;
+      padding: 28px;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #10b981;
+    }
+
+    .card span {
+      display: inline-block;
+      color: #10b981;
+      font-size: .85rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #aeb4c0;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      color: #08110d;
+      background: #10b981;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 800px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="intro">
+      <h1>Ribeiro Studio</h1>
+      <p>Projetos de desenvolvimento web desenvolvidos pela Ribeiro's Tech.</p>
+    </section>
+
+    <section class="projects">
+
+      <article class="card">
+        <span>Landing Page</span>
+        <h2>Aurora Café</h2>
+        <p>Projeto demonstrativo de uma landing page moderna e responsiva.</p>
+        <a href="./landing-page/">Visitar projeto →</a>
+      </article>
+
+      <article class="card">
+        <span>Site Profissional</span>
+        <h2>Studio Formação</h2>
+        <p>Site institucional desenvolvido para apresentar uma marca e seus serviços.</p>
+        <a href="./site-profissional/">Visitar projeto →</a>
+      </article>
+
+      <article class="card">
+        <span>Site Premium</span>
+        <h2>Forza Fitness</h2>
+        <p>Projeto premium com maior nível de personalização e experiência visual.</p>
+        <a href="./site-premium/">Visitar projeto →</a>
+      </article>
+
+    </section>
+  </main>
+
+</body>
+</html>
